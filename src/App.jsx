@@ -11,7 +11,7 @@ import NotFoundPage from './components/Pages/NotFoundPage/NotFoundPage'; // Para
 function App() {
   return (
     <Router>
-      <Header /> {/* El Header se mostrará en todas las páginas */}
+      <Header appTitle="AlfaDev"/> {/* El Header se mostrará en todas las páginas */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contacto" element={<ContactPage />} />

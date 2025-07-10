@@ -57,6 +57,18 @@ nav a:hover {
     background-color: #555;
 }
 
+/* Estilos para el botón de menú móvil */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none; /* Oculto por defecto en escritorio */
+    z-index: 1001; /* Asegura que esté por encima de la navegación */
+}
+
+
 /* Media Queries para Responsive del Header */
 @media (max-width: 768px) {
     .header-content {
@@ -64,6 +76,33 @@ nav a:hover {
         text-align: center;
         padding: 1rem; /* Ajusta el padding para móviles */
     }
+
+        /* Mostrar el botón de menú en pantallas pequeñas */
+        .menu-toggle {
+            display: block;
+        }
+    
+        /* Ocultar la navegación por defecto en móviles */
+        nav {
+            position: fixed; /* Posición fija para que cubra la pantalla */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente oscuro */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(100%); /* Desplazado fuera de la vista */
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000; /* Asegura que esté por encima del contenido */
+        }
+    
+        /* Clase para mostrar la navegación cuando isMenuOpen es true */
+        nav.menu-open {
+            transform: translateX(0); /* Vuelve a la posición visible */
+        }
+    
 
     nav ul {
         flex-direction: column; /* Apila los elementos del menú verticalmente */
