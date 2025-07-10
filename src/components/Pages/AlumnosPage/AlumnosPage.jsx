@@ -19,6 +19,55 @@ const alumnosDestacados = [
     linkText: 'Ver Perfil',
     linkUrl: '#',
   },
+  {
+    id: 3,
+    imageUrl: '/img/alumno2.png',
+    title: 'María García',
+    description: 'Proyecto final sobresaliente utilizando Django.',
+    linkText: 'Ver Perfil',
+    linkUrl: '#',
+  },
+  {
+    id: 4,
+    imageUrl: '/img/alumno2.png',
+    title: 'María García',
+    description: 'Proyecto final sobresaliente utilizando Django.',
+    linkText: 'Ver Perfil',
+    linkUrl: '#',
+  },
+  {
+    id: 5,
+    imageUrl: '/img/alumno2.png',
+    title: 'María García',
+    description: 'Proyecto final sobresaliente utilizando Django.',
+    linkText: 'Ver Perfil',
+    linkUrl: '#',
+  },
+  {
+    id: 6,
+    imageUrl: '/img/alumno2.png',
+    title: 'María García',
+    description: 'Proyecto final sobresaliente utilizando Django.',
+    linkText: 'Ver Perfil',
+    linkUrl: '#',
+  },
+  {
+    id: 7,
+    imageUrl: '/img/alumno2.png',
+    title: 'María García',
+    description: 'Proyecto final sobresaliente utilizando Django.',
+    linkText: 'Ver Perfil',
+    linkUrl: '#',
+  },
+  {
+    id: 8,
+    imageUrl: '/img/alumno2.png',
+    title: 'María García',
+    description: 'Proyecto final sobresaliente utilizando Django.',
+    linkText: 'Ver Perfil',
+    linkUrl: '#',
+  },
+
 ];
 
 const AlumnosPage = () => {
@@ -27,8 +76,8 @@ const AlumnosPage = () => {
       <section id="alumnos-destacados">
         <h2>Alumnos Destacados</h2>
         <div className="cards-container"> {/* 'class' cambia a 'className' */}
+          {alumnosDestacados.map((alumno) => (
           <div className="card"> {/* 'class' cambia a 'className' */}
-            {alumnosDestacados.map((alumno) => (
             <Card
               key={alumno.id} // Es crucial usar una 'key' única al mapear listas en React
               imageUrl={alumno.imageUrl}
@@ -37,9 +86,8 @@ const AlumnosPage = () => {
               linkText={alumno.linkText}
               linkUrl={alumno.linkUrl}
             />
-          ))}
-          
           </div>
+          ))}
         </div>
       </section>
 
