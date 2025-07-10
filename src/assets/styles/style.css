@@ -1,0 +1,99 @@
+/* Estilos Comunes */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #02111B;
+}
+
+header {
+    background-color: #02111B;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    background-color: #02111B;
+}
+
+main {
+    padding: 0rem;
+    min-height: 80vh;
+    background-color: #02111B;
+}
+
+footer {
+    background-color: #02111B;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* Estilos para links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* Transición suave */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para Responsive */
+
+/* Para pantallas de hasta 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Apila los elementos del menú verticalmente */
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Más espacio vertical entre los elementos del menú */
+    }
+
+    main {
+        padding: 1rem; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
+/* Para pantallas de hasta 480px (móviles pequeños) - Opcional, puedes ajustar el valor */
+@media (max-width: 480px) {
+    .social-icons a {
+        font-size: 1.25rem; /* Reduce el tamaño de los íconos sociales en móviles pequeños */
+    }
+}

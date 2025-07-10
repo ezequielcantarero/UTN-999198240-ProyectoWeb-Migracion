@@ -1,0 +1,93 @@
+/* Estilos específicos para el Header */
+
+header {
+    background-color: #02111B; /* Fondo del header */
+    color: white;
+    padding: 1rem 0; /* Padding global del header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Coloca el logo a la izquierda y la navegación a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    /*max-width: 1200px; /* Opcional: Limita el ancho del header para pantallas grandes */
+    margin: 0 auto; /* Opcional: Centra el header horizontalmente */
+    padding: 0 1rem; /* Añade padding horizontal */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Ajusta el tamaño del logo */
+   /* margin-right: 10px; /* Espacio entre el logo y el nombre */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura el comportamiento de bloque */
+}
+
+.logo h1 {
+    font-size: 1.5rem; /* Ajusta el tamaño del nombre */
+    margin: 0;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Media Queries para Responsive del Header */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Apila el logo y la navegación en pantallas pequeñas */
+        text-align: center;
+        padding: 1rem; /* Ajusta el padding para móviles */
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila los elementos del menú verticalmente */
+        text-align: center;
+        justify-content: center; /* Centra los ítems apilados */
+        margin-top: 1rem; /* Espacio entre el logo/título y el menú */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Más espacio vertical entre los elementos del menú */
+    }
+
+    .logo {
+        margin-bottom: 1rem; /* Espacio debajo del logo/título */
+    }
+}
+
+/* Ajuste adicional para móviles muy pequeños si es necesario */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}

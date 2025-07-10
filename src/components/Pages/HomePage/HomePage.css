@@ -1,0 +1,107 @@
+/* Estilos específicos para la HomePage */
+
+/* Estilos para la sección Hero */
+#hero {
+    background-color: #02111B; /* Color de fondo oscuro */
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem; /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero img {
+    max-width: 100%; /* Asegura que la imagen sea responsive */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 2rem; /* Espacio debajo de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+h1 {
+    font-size: 3rem; /* Tamaño de fuente grande para el título principal */
+    margin-bottom: 1rem;
+    color: white;
+}
+
+p {
+    font-size: 1.2rem; /* Tamaño de fuente para la descripción */
+    /*max-width: 1200px; /* Ancho máximo para el párrafo */
+    line-height: 1.8;
+    color: white;
+}
+
+/* Estilos para la sección Intro */
+#intro {
+    padding: 3rem 2rem;
+    text-align: center;
+    
+}
+
+#intro h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007BFF; /* Línea decorativa */
+    display: inline-block; /* Para que la línea se ajuste al texto */
+    padding-bottom: 0.5rem;
+}
+
+#intro p {
+    font-size: 1.1rem;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto; /* Centra el párrafo */
+    line-height: 1.7;
+}
+
+/* Responsive adjustments for HomePage */
+@media (max-width: 768px) {
+    #hero {
+        padding: 3rem 1.5rem;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #intro {
+        padding: 2rem 1.5rem;
+    }
+
+    #intro h2 {
+        font-size: 1.8rem;
+    }
+
+    #intro p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        padding: 2rem 1rem;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    #intro {
+        padding: 1.5rem 1rem;
+    }
+
+    #intro h2 {
+        font-size: 1.5rem;
+    }
+}
